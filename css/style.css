@@ -1,0 +1,344 @@
+*   {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+
+.button {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    background-color: #9195aa;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.button:hover {
+    opacity: 0.8;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/background2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__container {
+    position: relative;
+    flex-grow: 1;
+    max-width: 1920px;
+    max-height: 1080px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main-content {
+    height: 100%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 380px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.logo  {
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 150px;
+}
+
+.main-content__title {
+    margin-top: 35px;
+}
+
+.main-content__title h3 {
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #717482;
+}
+
+.main-content__title h3:first-line {
+    margin-bottom: 5px;
+}
+
+
+.main-content__subtitle {
+    margin: 15px 0 15px 0;
+    font-size: 30px;
+}
+
+.main-content__subtitle h5 {
+    font-family: reeyRegular, sans-serif;
+    font-size: 28px;
+    color: #8c90ae;
+}
+
+.main-content__text p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #61616c;
+}
+
+.site-link {
+    position: absolute;
+    top: 30px;
+    right: 34%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 4px;
+    writing-mode: vertical-lr;
+}
+
+.site-link a {
+    color: #6b6e87;
+}
+
+.sail-circle {
+    position: absolute;
+    top: 12%;
+    right: 20px
+}
+
+.sail-circle__ellipse {
+    color: #fff;
+}
+
+.sail-circle__ellipse img {
+    width: 150px;
+    height: 150px;
+}
+
+.sail-circle__ellipse p {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 50%;
+    transform: translate3d(50%, -50%, 0);
+    width: 100px;
+    font-family: monsterrat-regular, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+}
+
+.sail-circle__ellipse .sail-circle__price {
+    font-family: monsterrat-bold, sans-serif;
+    font-size: 46px;
+}
+
+.sail-circle__off {
+    font-family: monsterrat-regular, sans-serif;
+    font-size: 24px;
+}
+
+.main-number {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.main-number__container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.main-number__container span {
+    margin-bottom: 4px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1;
+}
+
+.number {
+    font-family: "poppins", sans-serif;
+    font-weight: 800;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1;
+}
+
+.main-number__img img {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+@media (max-width: 960px) {
+    .main-content {
+        width: 300px;
+    }
+
+
+    .logo  {
+        background-image: url("../img/logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+    }
+
+    .main-content__title h3 {
+        /*font-size: 45px;*/
+        /*line-height: 45px;*/
+    }
+
+    .main-content__subtitle h5 {
+        /*font-size: 20px;*/
+    }
+
+    .main-content__subtitle {
+        margin: 15px 0 18px 0;
+    }
+
+    .main-content__text p {
+        width: 250px;
+        font-size: 15px;
+    }
+
+    .button {
+        padding: 7px 25px;
+        font-size: 10px;
+    }
+
+    .sail-circle__ellipse img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sail-circle__ellipse p {
+        width: 45px;
+        font-size: 8px;
+    }
+
+    .sail-circle__ellipse .sail-circle__price {
+        font-size: 20px;
+    }
+
+    .sail-circle__off {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 680px) {
+    .main {
+        background-image: url("../img/background3.jpg")
+    }
+
+    .main-content__title {
+        margin-top: 25px;
+    }
+
+    .main-content__subtitle {
+        /*margin: 10px 0 5px 0;*/
+    }
+
+    .main-content__text p {
+        margin-bottom: 10px;
+    }
+
+    .site-link {
+        top: 15px;
+        right: 30%;
+        font-size: 10px;
+    }
+
+    .main-content__title h3,
+    .main-content__subtitle h5,
+    .main-content__text p,
+    .site-link a
+    {
+        color: #fff;
+    }
+
+    .main-content__title h3 {
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #9195aa;
+    }
+
+    .main-content__subtitle h5 {
+        -webkit-text-stroke-width: 0.1px;
+        -webkit-text-stroke-color: #9195aa;
+    }
+
+    .main-content__text p {
+        -webkit-text-stroke-width: 0.7px;
+        -webkit-text-stroke-color: #9195aa;
+    }
+
+    .main-number__container span {
+        -webkit-text-stroke-width: 0.6px;
+        -webkit-text-stroke-color: #9195aa;
+    }
+
+    .number {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #9195aa;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .site-link {
+        writing-mode: horizontal-tb;
+        right: 20px;
+    }
+
+    .main-content {
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+

@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'reeyRegular';
+    font-weight: 400;
+    src: url("../fonts/reey/Reey-Regular.otf");
+}
+
+@font-face {
+    font-family: 'monsterrat-regular';
+    font-weight: 400;
+    src: url("../fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'monsterrat-bold';
+    font-weight: 700;
+    src: url("../fonts/montserrat/Montserrat-Bold.ttf");
+}
+
